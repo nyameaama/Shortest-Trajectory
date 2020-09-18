@@ -8,9 +8,11 @@
 # midptellipse(10, 15, 50, 50);  
   
 #Function returns list with points in format [x1,y1,x2,y2,x3,y3]
-def midptellipse(rx, ry, xc, yc):  
+def midptellipse(minor_radius, major_radius, xc, yc):  
     Points = []
     index = 0
+    rx = minor_radius
+    ry = major_radius
 
     x = 0;  
     y = ry;  
