@@ -1,43 +1,27 @@
-from Draw import *
-from graphics import *
-import tkinter as Tkinter
-import time
+'''
+MIT License
 
-#Draw Window
-win = GraphWin("Shortest Trajectory", 1000, 700)
+Copyright (c) 2020 Nyameaama Gambrah
 
-def getPoints():
-    #print(midptellipse(10,15,100,100))
-    print(5)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-def loadImages():
-    earth = Image(Point(500,500),"/Users/nyameaama/Documents/Shortest-Trajectory/assets/MarsX.gif")
-    earth.draw(win)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-def APP_SETUP():
-    print("Setup")
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+'''
+from interface import *
 
-
-def APP_LOOP():
-    print("loop")
-    loadImages()
-    #c = Circle(Point(50,50), 1)
-    #c.draw(win)
-    getPoints()
-    for i in range(1,600):
-        win.plot(i,i)
-        #time.sleep(0)
-
-    win.getMouse() # pause for click in window win.close()
-    update(60)
-
-
-def main():
-   APP_SETUP()
-   APP_LOOP()
-   #top = Tkinter.Tk()
-   #B = Tkinter.Button(top, text ="Hello", command = getPoints)
-   #B.pack()
-
-
-main()
+if __name__ == "__main__":
+    interface_main()
