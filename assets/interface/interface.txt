@@ -1,0 +1,16 @@
+Functions
+
+Main:
+Prompts-
+Input or Select 2 Planets to get traj
+Optional Speed
+
+Show-
+Planet/Orbital Body Information
+
+
+
+
+Misc:
+Developer Information
+Update Check

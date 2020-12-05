@@ -8,9 +8,12 @@ def getPoints():
     print(5)
 
 def loadImages():
-    img = PhotoImage(file="/Users/nyameaama/Documents/Shortest-Trajectory/assets/MarsX.gif")      
-    simul.create_image(20,20, anchor=NW, image=img)
+    #img = PhotoImage(file="/Users/nyameaama/Documents/Shortest-Trajectory/assets/MarsX.gif")      
+    #simul.create_image(20,20, anchor=NW, image=img)
 
+    img = PhotoImage(file="/Users/nyameaama/Documents/Shortest-Trajectory/assets/interface/A-OneSpace-Logo.png")
+    panel = Label(root, image = img)
+    panel.pack(side = "bottom", fill = "both", expand = "yes")
 
 def APP_SETUP():
     print("Setup")
